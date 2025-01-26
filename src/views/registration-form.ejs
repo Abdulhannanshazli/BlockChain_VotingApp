@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/registration_from.css" rel="stylesheet" type="text/css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+    <section id="login_signUpForm">
+      <div
+        class="container"
+        id="container"
+      >
+        <div class="form-container sign-up">
+          <div id="form">
+            <div id="Applogo">
+              <img src="https://cdn-icons-png.flaticon.com/128/33/33308.png" alt="logo" />
+            </div>
+            <h1>Create Account</h1>
+            <input
+              id="sign-up-name"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+            id="sign-up-email"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+            id="sign-up-pass"
+              type="password"
+              placeholder="Password"
+            />
+            <p>
+              Already have a Account?
+              <span id="login2"> Sign In</span>
+            </p>
+            <p id="signup_error"></p>
+            <button id="user_signup">Sign Up</button>
+          </div>
+        </div>
+        <div class="form-container sign-in">
+          <div id="form">
+            <div id="Applogo">
+              <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="logo" />
+            </div>
+            <h1>Sign In</h1>
+            <input
+              id="sign-in-email"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+            id="sign-in-pass"
+              type="password"
+              placeholder="Password"
+            />
+            <p>
+              Don't have a Account?<span id="register2"> Sign Up</span>
+            </p>
+            <p id="singin_error"></p>
+            <button id="user_signin">Sign In</button>
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                Please sign in to access your account, then click the 'Sign In'
+                button to proceed.
+              </p>
+              <button class="hidden" id="login" >
+                Sign In
+              </button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Hello, Friend!</h1>
+              <p>
+                Ready to get started? Click 'Sign Up' to create your account and
+                unlock all the features.
+              </p>
+              <button class="hidden" id="register" >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <script src="../js/script.js"></script>
+  </body>
+</html>

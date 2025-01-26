@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/registration_from.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split left">
+        <h3>New here ?</h3>
+        <p>If you haven't signed up , What are you waiting for ?</p>
+        <a href="/register" class="btn">Sign up </a>
+      </div>
+      <div class="split right">
+        <form method="post" action="/login">
+          <h2 class="title">Sign in</h2>
+          <%=(typeof alertMsg!='undefined')? alertMsg:''%>
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Email Address"
+              name="email_address"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
